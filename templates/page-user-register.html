@@ -109,44 +109,39 @@
 <!-- ========================= SECTION CONTENT ========================= -->
 <section class="section-content padding-y">
 
-<!-- ============================ COMPONENT REGISTER   ================================= -->
-	<div class="card mx-auto" style="max-width:520px; margin-top:40px;">
+<!-- ============================ COMPONENT REGISTER   ================================= --><div class="card mx-auto" style="max-width:520px; margin-top:40px;">
       <article class="card-body">
-		<header class="mb-4"><h4 class="card-title">Sign up</h4></header>
+		<header class="mb-4"><h4 class="card-title">Royhatdan otish</h4></header>
 		<form>
 				<div class="form-row">
 					<div class="col form-group">
-						<label>First name</label>
-					  	<input type="text" class="form-control" placeholder="">
-					</div> <!-- form-group end.// -->
-					<div class="col form-group">
-						<label>Last name</label>
-					  	<input type="text" class="form-control" placeholder="">
+						<label>Ism:</label>
+					  	<input type="text" class="form-control" name="i" placeholder="">
 					</div> <!-- form-group end.// -->
 				</div> <!-- form-row end.// -->
 				<div class="form-group">
 					<label>Email</label>
-					<input type="email" class="form-control" placeholder="">
+					<input type="email" class="form-control" name="e" placeholder="">
 					<small class="form-text text-muted">We'll never share your email with anyone else.</small>
 				</div> <!-- form-group end.// -->
 				<div class="form-group">
 					<label class="custom-control custom-radio custom-control-inline">
-					  <input class="custom-control-input" checked="" type="radio" name="gender" value="option1">
-					  <span class="custom-control-label"> Male </span>
+					  <input class="custom-control-input" checked="" type="radio" name="jins" value="option1">
+					  <span class="custom-control-label"> Erkak </span>
 					</label>
 					<label class="custom-control custom-radio custom-control-inline">
-					  <input class="custom-control-input" type="radio" name="gender" value="option2">
-					  <span class="custom-control-label"> Female </span>
+					  <input class="custom-control-input" type="radio" name="jins" value="option2">
+					  <span class="custom-control-label"> Ayol </span>
 					</label>
 				</div> <!-- form-group end.// -->
 				<div class="form-row">
 					<div class="form-group col-md-6">
-					  <label>City</label>
-					  <input type="text" class="form-control">
+					  <label>Shahar</label>
+					  <input type="text" class="form-control" name="sh">
 					</div> <!-- form-group end.// -->
 					<div class="form-group col-md-6">
-					  <label>Country</label>
-					  <select id="inputState" class="form-control">
+					  <label>Mamlakat</label>
+					  <select id="inputState" class="form-control" name="m">
 					    <option> Choose...</option>
 					      <option>Uzbekistan</option>
 					      <option>Russia</option>
@@ -158,13 +153,13 @@
 				</div> <!-- form-row.// -->
 				<div class="form-row">
 					<div class="form-group col-md-6">
-						<label>Create password</label>
-					    <input class="form-control" type="password">
-					</div> <!-- form-group end.// --> 
+						<label>User</label>
+					    <input class="form-control" type="text" name="u">
+					</div> <!-- form-group end.// -->
 					<div class="form-group col-md-6">
-						<label>Repeat password</label>
-					    <input class="form-control" type="password">
-					</div> <!-- form-group end.// -->  
+						<label>Parol</label>
+					    <input class="form-control" type="password" name="p">
+					</div> <!-- form-group end.// -->
 				</div>
 			    <div class="form-group">
 			        <button type="submit" class="btn btn-primary btn-block"> Register  </button>
@@ -175,7 +170,7 @@
 			</form>
 		</article><!-- card-body.// -->
     </div> <!-- card .// -->
-    <p class="text-center mt-4">Have an account? <a href="">Log In</a></p>
+    <p class="text-center mt-4">Have an account? <a href="/login/">Log In</a></p>
     <br><br>
 <!-- ============================ COMPONENT REGISTER  END.// ================================= -->
 

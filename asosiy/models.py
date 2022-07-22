@@ -1,3 +1,21 @@
 from django.db import models
 
-# Create your models here.
+class Bolim(models.Model):
+    nom=models.CharField(max_length=120)
+    rasm=models.FileField(blank=True)
+class Ichki(models.Model):
+    nom=models.CharField(max_length=120)
+    rasm=models.FileField()
+    bolim=models.ForeignKey(Bolim,on_delete=models.CASCADE)
+class Mahsulot(models.Model):
+    nom=models.CharField(max_length=140)
+    narx=models.IntegerField()
+    ishlabchiqaruvchi=models.CharField(max_length=120)
+    kafolat=models.CharField(max_length=100)
+    yetkazish=models.CharField(max_length=140)
+    mavjud=models.BooleanField()
+    batafsil=models.TextField()
+    ichki=models.ForeignKey(Ichki,on_delete=models.CASCADE)
+class Media(models.Model):
+    rasm=models.FileField()
+    mahsulot=models.ForeignKey(Mahsulot,on_delete=models.CASCADE)
